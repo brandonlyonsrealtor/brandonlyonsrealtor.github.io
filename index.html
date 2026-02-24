@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,12 +55,12 @@
         </nav>
 
         <h1>Welcome, Brandon Lyons</h1>
-        <p>This dashboard compiles key information from your 7 property CMA reports for your real estate rental home investment portfolio. Since the PDF contents could not be directly accessed, I extracted comparable data manually from public real estate sources like Zillow. Each section below uses this extracted data where applicable. For a dynamic version, integrate APIs from Zillow or similar services.</p>
+        <p>This dashboard compiles key information from your 7 property CMA reports for your real estate rental home investment portfolio. Data has been extracted from the provided links for 6120 Wilderness Ave (Property 006) and 11720 Great Commission Way (Property 007). Other properties use public estimates until full extractions are complete. For a dynamic version, integrate APIs or a backend to fetch/update from links automatically.</p>
 
         <!-- Report Sections -->
         <div id="overview" class="report-section">
             <h3>1. Property Overview</h3>
-            <p>Compiled property details from CMA-equivalent public data.</p>
+            <p>Compiled property details from CMA reports (where available) and public data.</p>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -132,9 +131,9 @@
                         <td>Single Family</td>
                         <td>3</td>
                         <td>2</td>
-                        <td>1,110</td>
+                        <td>1,076</td>
                         <td>1993</td>
-                        <td>Occupied</td>
+                        <td>Off Market</td>
                     </tr>
                     <tr>
                         <td>007</td>
@@ -144,7 +143,7 @@
                         <td>2</td>
                         <td>1,530</td>
                         <td>2006</td>
-                        <td>Occupied</td>
+                        <td>Off Market</td>
                     </tr>
                 </tbody>
             </table>
@@ -152,11 +151,11 @@
 
         <div id="financial" class="report-section">
             <h3>2. Financial Summary</h3>
-            <p>Overall portfolio value based on current Zestimates (estimated market values).</p>
+            <p>Overall portfolio value based on CMA AVMs (where extracted) and public estimates. For 6120 Wilderness Ave: $269,000 (range $215,200–$322,800; updated 2/20/2026; CMA $335,000). For 11720 Great Commission Way: $418,440 (range $385,000–$451,900; updated 2/19/2026; CMA $445,000).</p>
             <div class="card">
                 <div class="card-body">
-                    <h5>Total Portfolio Value: $1,764,900</h5>
-                    <h5>Average Property Value: $252,129</h5>
+                    <h5>Total Portfolio Value: $1,673,340</h5>
+                    <h5>Average Property Value: $239,049</h5>
                     <p class="placeholder">ROI not available from extracted data.</p>
                 </div>
             </div>
@@ -164,7 +163,7 @@
 
         <div id="occupancy" class="report-section">
             <h3>3. Occupancy Report</h3>
-            <p class="placeholder">Current occupancy rates and vacancy details (not available in CMA data; assuming full occupancy).</p>
+            <p class="placeholder">Current occupancy rates and vacancy details (not available in CMA data; assuming full occupancy except where noted).</p>
             <div class="progress mb-3">
                 <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% Occupied</div>
             </div>
@@ -210,7 +209,7 @@
 
         <div id="expenses" class="report-section">
             <h3>7. Expenses Report</h3>
-            <p class="placeholder">Breakdown of expenses like taxes, repairs, utilities (not available in CMA data).</p>
+            <p class="placeholder">Breakdown of expenses like taxes, repairs, utilities (not available in CMA data; note from reports: 2025 taxes $2,603 for 6120 Wilderness Ave; 2024 taxes $5,957 for 11720 Great Commission Way).</p>
             <div class="card">
                 <div class="card-body">
                     <h5>Total Expenses YTD: N/A</h5>
